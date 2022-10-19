@@ -1,0 +1,293 @@
+@font-face{
+    font-family: "LuckiestGuy-Regular";
+    src:url("../fonts/LuckiestGuy-Regular.ttf");    
+}
+
+body{
+    margin: 0;
+    background-color: #292929;
+    background-image: url(images/background.png);
+    background-size: contain;
+    background-repeat: repeat;   
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .3fr .3fr 1fr 3fr 3fr 1fr 3fr .3fr .3fr .3fr .3fr 1fr 1fr .3fr;
+    grid-template-areas: 
+        "logo logo logo logo"
+        "b1 b2 b3 b4"
+        "p1 p1 p1 p1"
+        "t1 t1 t1 t1"
+        "t2 t2 t2 t2"
+        "p2 p2 p2 p2"
+        "t3 t3 t3 t3"
+        "b5 b5 b5 b5"
+        "b6 b6 b6 b6"
+        "b7 b7 b7 b7"
+        "b8 b8 b8 b8"
+        "p3 p3 t4 t4"
+        "p4 p4 t4 t4"
+        "f f f f"
+}
+
+.running-header-background{
+    background: #A7E8FD;
+    grid-area: logo;
+}
+
+.title{
+       grid-area: logo;
+       z-index: 100;
+       justify-self: center;     
+}
+
+.title img{
+    height: 9vh;   
+}
+
+.button1{
+    grid-area: b1;
+}
+.button2{
+    grid-area: b2;
+}
+.button3{
+    grid-area: b3;
+}
+.button4{
+    grid-area: b4;
+}
+
+.headerButton{
+    font-family: "LuckiestGuy-Regular", sans-serif;
+    letter-spacing:0.1em;
+    margin: -2vh .5vw;
+    height: 2.4vh;
+    text-align: center;
+    font-size: 1em;
+    background-color: #D5F5FF;
+    width: 24vw;
+    border-radius: 2vw;
+    padding-top: .65em;
+    color: black;
+}
+
+.photo-box-1{
+    grid-area: p1;
+    align-content: center;
+    justify-self: center;
+    margin-top: 3vh;
+}
+
+.photo-1{
+    grid-area: p1;
+    height: 42vh;
+    border-radius: 1em;
+    justify-self: center;
+}
+
+/*
+.pink-outline-1{
+    grid-area: p1;
+    height: 45vh;
+    justify-self: center;
+    margin: -45vh 0vh 0vh 0vh; 
+    z-index: 100;
+}
+*/
+
+.text-box-1{
+    grid-area: t1;
+    font-family: "LuckiestGuy-Regular", sans-serif;
+    color: white;
+    text-align: left;
+    letter-spacing: .1em;
+    font-size: 1.23em;
+    margin-top: 1vh;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0em .75em;
+    width: 90vw;
+    justify-self: center;
+}
+.history{
+    grid-area: t2;
+    font-family: "LuckiestGuy-Regular", sans-serif;
+    color: hotpink;
+    text-align: left;
+    width: 90vw;
+    justify-self: center;
+    opacity: 100%;
+    z-index: 100;
+}
+.text-box-2{
+    grid-area: t2;
+    font-family: "LuckiestGuy-Regular", sans-serif;
+    color: white;
+    text-align: left;
+    letter-spacing: .1em;
+    font-size: 1.23em;
+    width: 90vw;
+    justify-self: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0em .75em;  
+}
+
+.photo-box-2{
+    grid-area: p2;
+    align-content: center;
+    justify-self: center;
+    margin-top: 1.5vh;
+}
+
+.photo-2{
+    grid-area: p1;
+    height: 42vh;
+    border-radius: 1em;
+    justify-self: center;
+}
+
+.text-box-3{
+    grid-area: t3;
+    font-family: "LuckiestGuy-Regular", sans-serif;
+    color: white;
+    text-align: left;
+    letter-spacing: .1em;
+    font-size: 1.23em;
+    width: 90vw;
+    justify-self: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0em .75em;
+    margin-top: 1vh;
+    margin-bottom: 6vh;
+}
+
+.button5{
+    grid-area: b5;
+    color: red;
+}
+.button6{
+    grid-area: b6;
+    color: deepskyblue;
+}
+.button7{
+    grid-area: b7;
+    color: gold;
+}
+.button8{
+    grid-area: b8;
+    color: lime;
+    margin-bottom: 3vh;
+}
+
+.shopButton{
+    font-family: "LuckiestGuy-Regular", sans-serif;
+    letter-spacing:0.1em;
+    margin-top:1vh;
+    height: 4vh;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: white;
+    width: 90vw;
+    justify-self: center;
+    border-radius: 2vw;
+    padding-top: .65em;
+}
+
+.shop{
+    grid-area: b5;
+    font-family: "LuckiestGuy-Regular", sans-serif;
+    color: hotpink;
+    font-size: 2.em;
+    text-align: left;
+    justify-self: center;
+    width: 90vw;
+    opacity: 100%;
+    z-index: 100;
+    margin-top: -4vh;
+    height: 1em;
+}
+
+.photo-box-3{
+    grid-area: p3;
+    margin-top: 7vh;
+    margin-left: 5vw;
+}
+
+.photo-3{
+    grid-area: p3;
+    height: 20vh;
+    border-radius: 1em;
+}
+
+.photo-box-4{
+    grid-area: p4;
+    margin-top: vh;
+    margin-left: 5vw;
+}
+
+.photo-4{
+    grid-area: p4;
+    height: 20vh;
+    border-radius: 1em;
+}
+
+.footer{
+    background: #A7E8FD;
+    grid-area: f;
+    height: 10vh;
+    margin-top: 2vh;
+    width: 100vw;
+    justify-self: center;
+}
+
+.contact-us{
+    grid-area: p3;
+    font-family: "LuckiestGuy-Regular", sans-serif;
+    color: hotpink;
+    font-size: 1.96em;
+    text-align: left;
+    opacity: 100%;
+    z-index: 100;
+    margin-left: 5vw;
+    height: 1em;
+}
+
+.contact-form{
+    grid-area: t4;
+    font-family: "LuckiestGuy-Regular", sans-serif;
+    color: white;
+    justify-self: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: .75em;
+    margin-top: 6.5vh
+    
+}
+
+
+
+/*/media queries/*/
+
+@media screen and (min-width: 576px){
+    
+}
+
+@media screen and (min-width: 768px){
+    
+}
+
+@media screen and (min-width: 992px){
+    
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1400px){
+    
+}
+
