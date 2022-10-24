@@ -3,6 +3,11 @@
     src:url("../fonts/LuckiestGuy-Regular.ttf");    
 }
 
+@font-face{
+    font-family: "RobotoMono-Regular";
+    src:url("../fonts/RobotoMono-VariableFont.ttf"); 
+}
+
 body{
     margin: 0;
     background-color: #292929;
@@ -90,6 +95,7 @@ body{
     justify-self: center;
 }
 
+/*
 .pink-outline-1{
     grid-area: p1;
     height: 45vh;
@@ -97,17 +103,18 @@ body{
     margin: 1.5vh 0vh 0vh 0vh; 
     z-index: 100;
 }
+*/
 
 .text-box-1{
     grid-area: t1;
-    font-family: "LuckiestGuy-Regular", sans-serif;
+    font-family: "RobotoMono-Regular", sans-serif;
     color: white;
     text-align: left;
-    letter-spacing: .1em;
-    font-size: 1.23em;
+    letter-spacing: -.1em;
+    font-size: 1.2em;
     margin-top: 0vh;
     background: rgba(0, 0, 0, 0.5);
-    padding: .10em .75em;
+    padding: 0em .75em;  
     width: 90vw;
     justify-self: center;
 }
@@ -123,11 +130,11 @@ body{
 }
 .text-box-2{
     grid-area: t2;
-    font-family: "LuckiestGuy-Regular", sans-serif;
+    font-family: "RobotoMono-Regular", sans-serif;
     color: white;
     text-align: left;
-    letter-spacing: .1em;
-    font-size: 1.23em;
+    letter-spacing: -.1em;
+    font-size: 1.2em;
     width: 90vw;
     justify-self: center;
     background: rgba(0, 0, 0, 0.5);
@@ -138,7 +145,6 @@ body{
     grid-area: p2;
     align-content: center;
     justify-self: center;
-    margin-left: 2.3vh;
     margin-top: 1.5vh;
 }
 
@@ -148,20 +154,22 @@ body{
     justify-self: center;
 }
 
+/*
 .blue-outline-1{
     height: 45vh;
     justify-self: center;
     margin: -55vh 0vh 0vh -1.5vh; 
     z-index: 100;
 }
+*/
 
 .text-box-3{
     grid-area: t3;
-    font-family: "LuckiestGuy-Regular", sans-serif;
+    font-family: "RobotoMono-Regular", sans-serif;
     color: white;
     text-align: left;
-    letter-spacing: .1em;
-    font-size: 1.23em;
+    letter-spacing: -.1em;
+    font-size: 1.2em;
     width: 90vw;
     justify-self: center;
     background: rgba(0, 0, 0, 0.5);
@@ -206,7 +214,7 @@ body{
     grid-area: b5;
     font-family: "LuckiestGuy-Regular", sans-serif;
     color: white;
-    font-size: 2.em;
+    font-size: 1.5em;
     text-align: left;
     justify-self: center;
     width: 90vw;
@@ -253,7 +261,7 @@ body{
     grid-area: p3;
     font-family: "LuckiestGuy-Regular", sans-serif;
     color: white;
-    font-size: 1.96em;
+    font-size: 1.5em;
     text-align: left;
     opacity: 100%;
     z-index: 100;
