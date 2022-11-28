@@ -224,6 +224,16 @@ body{
     height: 1em;
 }
 
+.shopBackground{
+    background: rgba(0, 0, 0, 0.5);
+    width: 20vw;
+    margin-top: -4vh;
+    margin-left: -2.8vw;
+    z-index: 100;
+    height: 5vh;
+     
+}
+
 .photo-box-3{
     grid-area: p3;
     margin-top: 7vh;
@@ -269,6 +279,14 @@ body{
     height: 1em;
 }
 
+.contactBackground{
+    background: rgba(0, 0, 0, 0.5);
+    width: 35vw;
+    margin-top: -4vh;
+    margin-left: -2.8vw;
+    z-index: 100;
+    height: 5vh;
+}
 .contact-form{
     grid-area: t4;
     font-family: "LuckiestGuy-Regular", sans-serif;
@@ -307,6 +325,19 @@ body{
     justify-self: 
 }
 
+.return{
+    grid-area: f;
+    height: 3vh;
+    width: 39vw;
+    margin-left: 6vw;
+    margin-top: 2vh;
+    color: black;
+    z-index: 100;
+    font-family: "LuckiestGuy-Regular", sans-serif;
+    font-size: 1.5em;
+    
+}
+
 
 
 
@@ -331,10 +362,23 @@ body{
 }
     .shop{
         font-size: 2.5em;
+        
 }
+    .shopBackground{
+        margin-top: -5.4vh;
+        width: 23vw;
+        margin-left: -2.3vw
+
+    }
     .contact-us{
         font-size: 2.5em;
 } 
+    .contactBackground{
+        margin-top: -5.4vh;
+        width: 45vw;
+        margin-left: -2.3vw
+
+    }
 }
 
 
@@ -373,12 +417,29 @@ body{
 
 @media screen and (min-width: 1200px){
        .photo-box-3 .photo-3{  
-        height: 70vh;
+        height: 40vh;
    
 }
     .photo-box-4 .photo-4{  
-        height: 70vh;
+        height: 40vh;
 } 
+    .contact-form{
+       width: 50vw;
+       margin-left: -10vw;
+       height: 60vh;
+       font-size: 2em;
+    }
+.contactBackground{
+        margin-top: -5.4vh;
+        width: 15vw;
+        margin-left: -.8vw
+
+    }
+    .shopBackground{
+        margin-top: -5.4vh;
+        width:7vw;
+        margin-left: -.8vw;
+    }
 }
 
 @media screen and (min-width: 1400px){
